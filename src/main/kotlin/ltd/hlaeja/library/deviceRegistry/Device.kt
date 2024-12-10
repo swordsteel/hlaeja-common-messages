@@ -11,9 +11,6 @@ object Device {
     data class Response(
         val id: UUID,
         val type: UUID,
-    )
-
-    data class Identity(
         val identity: String,
     )
 }
