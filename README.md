@@ -20,18 +20,22 @@ Run `release.sh` script from `master` branch.
 ./gradlew clean build publish
 ```
 
-### Global gradle properties
+### Global Settings
 
-To authenticate with Gradle to access repositories that require authentication, you can set your user and token in the `gradle.properties` file.
+This services rely on a set of global settings to configure development environments. These settings, managed through Gradle properties or environment variables.
 
-Here's how you can do it:
+*Note: For more information on global properties, please refer to our [global settings](https://github.com/swordsteel/hlaeja-development/blob/master/doc/global_settings.md) documentation.*
 
-1. Open or create the `gradle.properties` file in your Gradle user home directory:
-   - On Unix-like systems (Linux, macOS), this directory is typically `~/.gradle/`.
-   - On Windows, this directory is typically `C:\Users\<YourUsername>\.gradle\`.
-2. Add the following lines to the `gradle.properties` file:
-    ```properties
-    repository.user=your_user
-    repository.token=your_token_value
-    ```
-   or use environment variables `REPOSITORY_USER` and `REPOSITORY_TOKEN`
+#### Gradle Properties
+
+```properties
+repository.user=your_user
+repository.token=your_token_value
+```
+
+#### Environment Variables
+
+```properties
+REPOSITORY_USER=your_user
+REPOSITORY_TOKEN=your_token_value
+```
