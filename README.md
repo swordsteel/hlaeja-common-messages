@@ -4,7 +4,7 @@ Classes for the common, messages to share, Classes for the systems, harmonized i
 
 ## Releasing library
 
-Run `release.sh` script from `master` branch.
+Run release pipeline from `master` branch.
 
 ## Publishing library
 
